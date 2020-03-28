@@ -1,0 +1,24 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+
+{% block content %}
+      <!--Newsletter starts here -->
+      <div class="container text-white position-relative text-center">
+        <p class="h3 mb-4 text-shadow font-weight-normal">Join our mailing list and we will let you know all the news!</p>
+        <div class="row">
+          <div class="col-lg-5 mx-auto">
+            <form action="." method="POST" class="d-flex d-inline-block w-100 flex-column flex-lg-row justify-content-center">
+              {% csrf_token %}
+              <div class="input-group shadow">
+                <input id="inlineFormInputName2" type="email" name="email" placeholder="earn@earnxtracash.com" class="form-control">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-primary mb-2">Subscribe</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+   {% endblock %}

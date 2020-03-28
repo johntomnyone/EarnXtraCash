@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EarnXtraCash Online Earning Pool - Coming Soon</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="static/vendor/bootstrap/css/bootstrap.min.css?{% now 'U' %}">
+    <!-- Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="static/css/style.default.css?{% now 'U' %}" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="static/css/custom.css?{% now 'U' %}">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <section style="background: url(static/img/vacation-2.jpg?{% now 'U' %})" class="page-holder position-relative d-flex justify-content-between flex-column">
+      <div class="overlay"></div>
+      <div class="container position-relative pt-3">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item"><a href="https://www.facebook.com/Xchangebuddy-106522447658250/" target="_blank" class="social-link facebook"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <div class="container text-center text-white position-relative mt-4 mb-5">
+        <h1 class="text-shadow mb-5 text-uppercase">EarnXtraCash</h1>
+        <p class="h3 text-shadow text-uppercase">We are still tweaking few details, stay tuned!</p>
+        <div id="countdown" class="countdown mt-5">
+          <div class="row">
+            <div class="countdown-item col-md-3 col-sm-6">
+              <div id="countdown-days" class="countdown-number font-weight-light text-shadow"> </div>
+              <p class="h4 font-weight-light text-shadow">days</p>
+            </div>
+            <div class="countdown-item col-md-3 col-sm-6">
+              <div id="countdown-hours" class="countdown-number font-weight-light text-shadow"> </div>
+              <p class="h4 font-weight-light text-shadow">hours</p>
+            </div>
+            <div class="countdown-item col-md-3 col-sm-6">
+              <div id="countdown-minutes" class="countdown-number font-weight-light text-shadow"> </div>
+              <p class="h4 font-weight-light text-shadow">minutes</p>
+            </div>
+            <div class="countdown-item col-md-3 col-sm-6">
+              <div id="countdown-seconds" class="countdown-number font-weight-light text-shadow"> </div>
+              <p class="h4 font-weight-light text-shadow">seconds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% block content %}
+
+
+
+      {% endblock %}
+
+
+
+
+
+         <footer class="py-4 position-relative w-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 text-center text-lg-left">
+              <p class="text-small mb-1"><a href="#" class="text-white">©<script type="text/javascript">var d = new Date(); document.write(d.getFullYear());</script> EarnXtraCash</a></p>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+              <p class="text-small text-white">Created by <a href="https://bootstrapious.com" class="text-white"></a>Bootstrapious<a href="https://bitcoinfees.co" class="text-white"></a></p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- JavaScript files-->
+    <script src="static/vendor/jquery/jquery.min.js?{% now 'U' %}"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js?{% now 'U' %}"></script>
+    <script src="static/vendor/jquery-countdown/jquery.countdown.min.js?{% now 'U' %}"></script>
+    <script src="static/vendor/moment/min/moment.min.js?{% now 'U' %}"></script>
+    <script src="static/js/front.js?{% now 'U' %}"></script>
+    <script>
+      // From the following config, you can set the final date.
+      config = {
+          countdown: {
+              year: 2020,
+              month: 10,
+              day: 20,
+              hour: 12,
+              minute: 12,
+              second: 00
+          }
+      };
+      // and now we init the countdown
+      $(function () {
+          countdown();
+      }); 
+      
+    </script>
+    <!-- FontAwesome CSS - loading as last, so it doesn't block rendering-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </body>
+</html>

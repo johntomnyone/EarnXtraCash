@@ -1,0 +1,9 @@
+---------------------
+ CREDITS
+---------------------
+
+	- Bootstrap 4       -  https://getbootstrap.com
+
+	- FontAwesome       -  https://fontawesome.com/start
+
+	- jQuery Countdown  -  http://hilios.github.io/jQuery.countdown/
